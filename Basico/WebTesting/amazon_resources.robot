@@ -4,7 +4,6 @@ Library        SeleniumLibrary
 *** Variables ***
 ${URL}                    https://www.amazon.com.br
 ${MENU_ELETRONICOS}       //a[@href='/Eletronicos-e-Tecnologia/b/?ie=UTF8&node=16209062011&ref_=nav_cs_electronics'][contains(.,'Eletrônicos')]
-${MENU_ELETRONICOS_A}       //a[@aria-label='Computadores e Informática']
 ${HEADER_ELETRONICOS}     //h1[contains(.,'Eletrônicos e Tecnologia')]
 
 
@@ -21,6 +20,7 @@ Acessar a home page do site Amazon.com.br
     # Wait Until Element Is Visible    locator=${MENU_ELETRONICOS}
 Entrar no menu "Eletrônicos"
     Click Element    locator=${MENU_ELETRONICOS}
+    # Click Image    locator=//img[@src='https://images-na.ssl-images-amazon.com/images/G/32/BR-hq/2021/img/Consumer_Electronics/Storefronts/Electronics/956.Storefront_categoria_computadores_icons_240x270.jpg']
 
 Verificar se aparece a frase "${FRASE}"
     Wait Until Page Contains    text=${FRASE}
@@ -31,8 +31,3 @@ Verificar se o título da página fica "${TITULO}"
 
 Verificar se aparece a categoria "${NOME_CATEGORIA}"
     Element Should Be Visible    locator=//a[@aria-label='${NOME_CATEGORIA}']
-    
-Clicar no elemento
-    Wait Until Page Contains     locator=//a[contains(.,'Publique seus livros')]
-    Click Element        locator=//a[contains(.,'Publique seus livros')]
-    
