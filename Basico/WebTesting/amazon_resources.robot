@@ -37,5 +37,6 @@ Digitar o nome de produto "${Produto}" no campo de pesquisa
 Clicar no botão de pesquisa
     Click Element    locator=nav-search-submit-button
 
-Verificar o resultado da pesquisa se está listando o produto pesquisado
-    Title Should Be    text=//span[@class='a-size-medium-plus a-color-base a-text-normal'][contains(.,'RESULTADOProduto
+Verificar o resultado da pesquisa se está listando o produto "${PRODUTO}"
+    Wait Until Element Is Visible    locator=//span[@class='a-size-medium-plus a-color-base a-text-normal'][contains(.,'RESULTADOS')]
+
