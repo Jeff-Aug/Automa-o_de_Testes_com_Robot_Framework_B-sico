@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220701 05:23:19.803" rpa="false" schemaversion="3">
+<suite id="s1" name="exemplosTiposVariaveis" source="C:\Users\denty\Desktop\estagio\Guia\udemy\Basico\Variaveis\exemplosTiposVariaveis.robot">
+<test id="s1-t1" name="Caso de teste - Exemplo 01" line="16">
+<kw name="Uma keyword qualquer 01">
+<kw name="Log" library="BuiltIn">
+<arg>${GLOBAL_SIMPLES}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220701 05:23:19.826" level="INFO">tipos de variaveis</msg>
+<status status="PASS" starttime="20220701 05:23:19.826" endtime="20220701 05:23:19.826"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Tem que ser banana ${FRUTAS[1]} e ${FRUTAS[0]} morango</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220701 05:23:19.827" level="INFO">Tem que ser banana banana e morango morango</msg>
+<status status="PASS" starttime="20220701 05:23:19.826" endtime="20220701 05:23:19.827"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Nome: ${PESSOAS.nome} e email: ${PESSOAS.email}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220701 05:23:19.828" level="INFO">Nome: Jeff Aug e email: jef@test.com</msg>
+<status status="PASS" starttime="20220701 05:23:19.827" endtime="20220701 05:23:19.828"/>
+</kw>
+<status status="PASS" starttime="20220701 05:23:19.825" endtime="20220701 05:23:19.828"/>
+</kw>
+<status status="PASS" starttime="20220701 05:23:19.825" endtime="20220701 05:23:19.828"/>
+</test>
+<status status="PASS" starttime="20220701 05:23:19.805" endtime="20220701 05:23:19.829"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="exemplosTiposVariaveis">exemplosTiposVariaveis</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
