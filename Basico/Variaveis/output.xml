@@ -1,82 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220701 05:40:12.635" rpa="false" schemaversion="3">
-<suite id="s1" name="tarefaMeses" source="C:\Users\denty\Desktop\estagio\Guia\udemy\Basico\Variaveis\tarefaMeses.robot">
-<test id="s1-t1" name="Meses do Ano" line="16">
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220701 05:53:53.469" rpa="false" schemaversion="3">
+<suite id="s1" name="exemplosArgumentos" source="C:\Users\denty\Desktop\estagio\Guia\udemy\Basico\Variaveis\exemplosArgumentos.robot">
+<test id="s1-t1" name="Caso de teste de exemplo 01" line="8">
+<kw name="Uma keyword qualquer 01">
+<kw name="Uma subkeyword com argumentos">
+<arg>${PESSOA.nome}</arg>
+<arg>${PESSOA.email}</arg>
 <kw name="Log" library="BuiltIn">
-<arg>Mes 01: ${MESES[0]}</arg>
+<arg>Nome Usuário: ${NOME_USUARIO}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220701 05:40:12.655" level="INFO">Mes 01: Janeiro</msg>
-<status status="PASS" starttime="20220701 05:40:12.654" endtime="20220701 05:40:12.655"/>
+<msg timestamp="20220701 05:53:53.490" level="INFO">Nome Usuário: Jeff Aug</msg>
+<status status="PASS" starttime="20220701 05:53:53.490" endtime="20220701 05:53:53.490"/>
 </kw>
 <kw name="Log" library="BuiltIn">
-<arg>Mes 02: ${MESES[1]}</arg>
+<arg>Email: ${EMAIL_USUARIO}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220701 05:40:12.655" level="INFO">Mes 02: Fevereiro</msg>
-<status status="PASS" starttime="20220701 05:40:12.655" endtime="20220701 05:40:12.655"/>
+<msg timestamp="20220701 05:53:53.490" level="INFO">Email: jeff@test.com</msg>
+<status status="PASS" starttime="20220701 05:53:53.490" endtime="20220701 05:53:53.490"/>
+</kw>
+<status status="PASS" starttime="20220701 05:53:53.489" endtime="20220701 05:53:53.490"/>
+</kw>
+<kw name="Uma subkeyword com retorno">
+<var>${MENSAGEM_ALERTA}</var>
+<arg>${PESSOA.nome}</arg>
+<arg>${PESSOA.idd}</arg>
+<kw name="Set Variable If" library="BuiltIn">
+<var>${MENSAGEM}</var>
+<arg>${IDADE_USUARIO}&lt;18</arg>
+<arg>Não autorizado! O usuário ${NOME_USUARIO} é menor de idade!</arg>
+<doc>Sets variable based on the given condition.</doc>
+<msg timestamp="20220701 05:53:53.491" level="INFO">${MENSAGEM} = Não autorizado! O usuário Jeff Aug é menor de idade!</msg>
+<status status="PASS" starttime="20220701 05:53:53.491" endtime="20220701 05:53:53.491"/>
+</kw>
+<msg timestamp="20220701 05:53:53.491" level="INFO">${MENSAGEM_ALERTA} = Não autorizado! O usuário Jeff Aug é menor de idade!</msg>
+<status status="PASS" starttime="20220701 05:53:53.490" endtime="20220701 05:53:53.491"/>
 </kw>
 <kw name="Log" library="BuiltIn">
-<arg>Mes 03: ${MESES[2]}</arg>
+<arg>${MENSAGEM_ALERTA}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220701 05:40:12.656" level="INFO">Mes 03: Marco</msg>
-<status status="PASS" starttime="20220701 05:40:12.655" endtime="20220701 05:40:12.656"/>
+<msg timestamp="20220701 05:53:53.492" level="INFO">Não autorizado! O usuário Jeff Aug é menor de idade!</msg>
+<status status="PASS" starttime="20220701 05:53:53.492" endtime="20220701 05:53:53.492"/>
 </kw>
-<kw name="Log" library="BuiltIn">
-<arg>Mes 04: ${MESES[3]}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220701 05:40:12.656" level="INFO">Mes 04: Abril</msg>
-<status status="PASS" starttime="20220701 05:40:12.656" endtime="20220701 05:40:12.656"/>
+<status status="PASS" starttime="20220701 05:53:53.489" endtime="20220701 05:53:53.492"/>
 </kw>
-<kw name="Log" library="BuiltIn">
-<arg>Mes 05: ${MESES[4]}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220701 05:40:12.657" level="INFO">Mes 05: Maio</msg>
-<status status="PASS" starttime="20220701 05:40:12.657" endtime="20220701 05:40:12.657"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>Mes 06: ${MESES[5]}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220701 05:40:12.657" level="INFO">Mes 06: Junho</msg>
-<status status="PASS" starttime="20220701 05:40:12.657" endtime="20220701 05:40:12.657"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>Mes 07: ${MESES[6]}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220701 05:40:12.658" level="INFO">Mes 07: Julho</msg>
-<status status="PASS" starttime="20220701 05:40:12.658" endtime="20220701 05:40:12.658"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>Mes 08: ${MESES[7]}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220701 05:40:12.659" level="INFO">Mes 08: Agosto</msg>
-<status status="PASS" starttime="20220701 05:40:12.658" endtime="20220701 05:40:12.659"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>Mes 09: ${MESES[8]}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220701 05:40:12.660" level="INFO">Mes 09: Setembro</msg>
-<status status="PASS" starttime="20220701 05:40:12.659" endtime="20220701 05:40:12.660"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>Mes 10: ${MESES[9]}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220701 05:40:12.660" level="INFO">Mes 10: Outubro</msg>
-<status status="PASS" starttime="20220701 05:40:12.660" endtime="20220701 05:40:12.660"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>Mes 11: ${MESES[10]}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220701 05:40:12.661" level="INFO">Mes 11: Novembro</msg>
-<status status="PASS" starttime="20220701 05:40:12.660" endtime="20220701 05:40:12.661"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>Mes 12: ${MESES[11]}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220701 05:40:12.661" level="INFO">Mes 12: Dezembro</msg>
-<status status="PASS" starttime="20220701 05:40:12.661" endtime="20220701 05:40:12.661"/>
-</kw>
-<status status="PASS" starttime="20220701 05:40:12.653" endtime="20220701 05:40:12.661"/>
+<status status="PASS" starttime="20220701 05:53:53.488" endtime="20220701 05:53:53.492"/>
 </test>
-<status status="PASS" starttime="20220701 05:40:12.636" endtime="20220701 05:40:12.662"/>
+<doc>Exemplo de uso de variáveis como argumentos em Keywords</doc>
+<status status="PASS" starttime="20220701 05:53:53.471" endtime="20220701 05:53:53.493"/>
 </suite>
 <statistics>
 <total>
@@ -85,7 +55,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="tarefaMeses">tarefaMeses</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="exemplosArgumentos">exemplosArgumentos</stat>
 </suite>
 </statistics>
 <errors>

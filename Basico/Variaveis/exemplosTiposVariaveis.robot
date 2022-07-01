@@ -6,7 +6,7 @@ Documentation
 
 ${GLOBAL_SIMPLES}    tipos de variaveis   #$-para variaveis globais
 
-@{FRUTAS}            morango    banana    maça     uva    #@-para lista
+@{FRUTAS}            morango    banana    jaca     uva    #@-para lista
 
 &{PESSOAS}           nome=Jeff Aug    email=jef@test.com    #&-para discionario
 
