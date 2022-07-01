@@ -1,31 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220701 05:23:19.803" rpa="false" schemaversion="3">
-<suite id="s1" name="exemplosTiposVariaveis" source="C:\Users\denty\Desktop\estagio\Guia\udemy\Basico\Variaveis\exemplosTiposVariaveis.robot">
-<test id="s1-t1" name="Caso de teste - Exemplo 01" line="16">
-<kw name="Uma keyword qualquer 01">
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220701 05:40:12.635" rpa="false" schemaversion="3">
+<suite id="s1" name="tarefaMeses" source="C:\Users\denty\Desktop\estagio\Guia\udemy\Basico\Variaveis\tarefaMeses.robot">
+<test id="s1-t1" name="Meses do Ano" line="16">
 <kw name="Log" library="BuiltIn">
-<arg>${GLOBAL_SIMPLES}</arg>
+<arg>Mes 01: ${MESES[0]}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220701 05:23:19.826" level="INFO">tipos de variaveis</msg>
-<status status="PASS" starttime="20220701 05:23:19.826" endtime="20220701 05:23:19.826"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>Tem que ser banana ${FRUTAS[1]} e ${FRUTAS[0]} morango</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220701 05:23:19.827" level="INFO">Tem que ser banana banana e morango morango</msg>
-<status status="PASS" starttime="20220701 05:23:19.826" endtime="20220701 05:23:19.827"/>
+<msg timestamp="20220701 05:40:12.655" level="INFO">Mes 01: Janeiro</msg>
+<status status="PASS" starttime="20220701 05:40:12.654" endtime="20220701 05:40:12.655"/>
 </kw>
 <kw name="Log" library="BuiltIn">
-<arg>Nome: ${PESSOAS.nome} e email: ${PESSOAS.email}</arg>
+<arg>Mes 02: ${MESES[1]}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220701 05:23:19.828" level="INFO">Nome: Jeff Aug e email: jef@test.com</msg>
-<status status="PASS" starttime="20220701 05:23:19.827" endtime="20220701 05:23:19.828"/>
+<msg timestamp="20220701 05:40:12.655" level="INFO">Mes 02: Fevereiro</msg>
+<status status="PASS" starttime="20220701 05:40:12.655" endtime="20220701 05:40:12.655"/>
 </kw>
-<status status="PASS" starttime="20220701 05:23:19.825" endtime="20220701 05:23:19.828"/>
+<kw name="Log" library="BuiltIn">
+<arg>Mes 03: ${MESES[2]}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220701 05:40:12.656" level="INFO">Mes 03: Marco</msg>
+<status status="PASS" starttime="20220701 05:40:12.655" endtime="20220701 05:40:12.656"/>
 </kw>
-<status status="PASS" starttime="20220701 05:23:19.825" endtime="20220701 05:23:19.828"/>
+<kw name="Log" library="BuiltIn">
+<arg>Mes 04: ${MESES[3]}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220701 05:40:12.656" level="INFO">Mes 04: Abril</msg>
+<status status="PASS" starttime="20220701 05:40:12.656" endtime="20220701 05:40:12.656"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Mes 05: ${MESES[4]}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220701 05:40:12.657" level="INFO">Mes 05: Maio</msg>
+<status status="PASS" starttime="20220701 05:40:12.657" endtime="20220701 05:40:12.657"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Mes 06: ${MESES[5]}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220701 05:40:12.657" level="INFO">Mes 06: Junho</msg>
+<status status="PASS" starttime="20220701 05:40:12.657" endtime="20220701 05:40:12.657"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Mes 07: ${MESES[6]}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220701 05:40:12.658" level="INFO">Mes 07: Julho</msg>
+<status status="PASS" starttime="20220701 05:40:12.658" endtime="20220701 05:40:12.658"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Mes 08: ${MESES[7]}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220701 05:40:12.659" level="INFO">Mes 08: Agosto</msg>
+<status status="PASS" starttime="20220701 05:40:12.658" endtime="20220701 05:40:12.659"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Mes 09: ${MESES[8]}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220701 05:40:12.660" level="INFO">Mes 09: Setembro</msg>
+<status status="PASS" starttime="20220701 05:40:12.659" endtime="20220701 05:40:12.660"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Mes 10: ${MESES[9]}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220701 05:40:12.660" level="INFO">Mes 10: Outubro</msg>
+<status status="PASS" starttime="20220701 05:40:12.660" endtime="20220701 05:40:12.660"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Mes 11: ${MESES[10]}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220701 05:40:12.661" level="INFO">Mes 11: Novembro</msg>
+<status status="PASS" starttime="20220701 05:40:12.660" endtime="20220701 05:40:12.661"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Mes 12: ${MESES[11]}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220701 05:40:12.661" level="INFO">Mes 12: Dezembro</msg>
+<status status="PASS" starttime="20220701 05:40:12.661" endtime="20220701 05:40:12.661"/>
+</kw>
+<status status="PASS" starttime="20220701 05:40:12.653" endtime="20220701 05:40:12.661"/>
 </test>
-<status status="PASS" starttime="20220701 05:23:19.805" endtime="20220701 05:23:19.829"/>
+<status status="PASS" starttime="20220701 05:40:12.636" endtime="20220701 05:40:12.662"/>
 </suite>
 <statistics>
 <total>
@@ -34,7 +85,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="exemplosTiposVariaveis">exemplosTiposVariaveis</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="tarefaMeses">tarefaMeses</stat>
 </suite>
 </statistics>
 <errors>
